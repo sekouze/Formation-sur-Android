@@ -1,7 +1,20 @@
 .......................................................................................
 
-                        ESSENTIELS SUR LE LANGAGE KOTLIN
+                        ESSENTIELS SUR LE DEVELOPPEMENT ANDROID
 
 ........................................................................................
 
-1*)d
+
+
+
+*************************************Installation des outils**********************
+1)Android studio : est un ide pour developper les application android
+2)IntelliJ : aussi un ide pour profgrammer en java ou kotlin
+3)JDK : c'est le kit(l'enssemble des outils) de developpement de java
+
+
+
+.......................................................................................
+                        ESSENTIELS SUR LE LANGAGE KOTLIN
+........................................................................................
+1*)

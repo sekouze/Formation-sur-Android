@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#00023f</color>
+    <color name="profil_bg_color">#505783</color>
+    <color name="input_color">#cfd1dd</color>
+    <color name="btn_color">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
