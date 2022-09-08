@@ -8,17 +8,14 @@
     android:background="@color/bg_color"
     tools:context=".LoginActivity">
 
-    <LinearLayout
-        android:layout_width="350"
-        android:layout_height="500"
-        android:orientation="vertical">
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textFontWeight="50"
+        android:textSize="12pt"
+        android:gravity="center"
+        android:text="Bienivenu sur la page <<login>>" />
 </LinearLayout>
