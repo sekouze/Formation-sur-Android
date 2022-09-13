@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Utilisateur/Desktop/sekouze/formation android/cours/ODCUI/app/src/main/res/layout/activity_facebook.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Utilisateur/Desktop/sekouze/formation android/cours/ODCUI/app/src/main/res/layout/activity_facebook_login.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Utilisateur/Desktop/sekouze/formation android/cours/ODCUI/app/src/main/res/layout/activity_home.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Utilisateur/Desktop/sekouze/formation android/cours/ODCUI/app/src/main/res/layout/activity_main.xml" value="0.290234375" />
         <entry key="..\:/Users/Utilisateur/Desktop/sekouze/formation android/cours/ODCUI/app/src/main/res/layout/activity_main2.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Utilisateur/Desktop/sekouze/formation android/cours/ODCUI/app/src/main/res/layout/activity_singnup.xml" value="0.38697916666666665" />
       </map>
     </option>
   </component>

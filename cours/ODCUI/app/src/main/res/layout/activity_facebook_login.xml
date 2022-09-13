@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color_fb"
-    tools:context=".facebook_login">
+    tools:context=".Facebook_login">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/activity_facebook_userName"
         android:layout_width="300dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="36dp"
         android:background="@color/white"
         android:ems="10"
@@ -20,10 +20,10 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_facebook_user_img" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/activity_facebook_password"
         android:layout_width="300dp"
         android:layout_height="38dp"
         android:layout_marginTop="20dp"
@@ -34,10 +34,10 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_facebook_userName" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/activity_facebook_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -46,10 +46,10 @@
         android:text="Se connecter"
         android:textColor="@color/bg_color_fb"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_facebook_password" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/activity_facebook_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -60,10 +60,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_facebook_password" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/activity_facebook_fpwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -74,17 +74,17 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/activity_facebook_user_img"
         android:layout_width="74dp"
         android:layout_height="64dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_facebook_l_imageView" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/activity_facebook_l_imageView"
         android:layout_width="143dp"
         android:layout_height="159dp"
         android:layout_marginStart="160dp"
