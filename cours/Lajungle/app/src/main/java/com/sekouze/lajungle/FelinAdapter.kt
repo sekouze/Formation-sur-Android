@@ -30,6 +30,7 @@ class FelinAdapter(val felins:List<Felin>):RecyclerView.Adapter<FelinAdapter.Fel
             val nom=itemView.findViewById<TextView>(R.id.list_item_nom)
             val vitesse=itemView.findViewById<TextView>(R.id.list_item_vitesse)
 
+        //Liaison des donne=ées à la vue
         fun bind(felin:Felin){
             image.setImageResource(felin.imageId)
             nom.text=felin.nom

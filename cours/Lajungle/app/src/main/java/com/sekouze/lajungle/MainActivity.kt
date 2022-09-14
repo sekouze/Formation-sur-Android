@@ -10,8 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.felin_list)
 
-        val recycle_view=findViewById<RecyclerView>(R.id.rv_felin_list)
-        val layout_manager=LinearLayoutManager(this)
-        recycle_view.layoutManager=layout_manager
+
     }
 }
