@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.sekouze.odctodoapp.R
 
-class TaskAdapter:ListAdapter<Task,TaskAdapter.TaskViewHolder>(TaskDiffUtil()) {
+class TaskAdapter(val listner: IOnTaskClickListner):ListAdapter<Task,TaskAdapter.TaskViewHolder>(TaskDiffUtil()) {
 
 
 
@@ -29,15 +29,44 @@ class TaskAdapter:ListAdapter<Task,TaskAdapter.TaskViewHolder>(TaskDiffUtil()) {
         holder.bind(task)
     }
 
-    class TaskViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
+    fun getTaskAtPosition(position: Int):Task{
+        val task=getItem(position)
+        return task
+    }
+
+    inner class TaskViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
         val checkbox=itemView.findViewById<CheckBox>(R.id.list_item_checkBox)
         val title=itemView.findViewById<TextView>(R.id.list_item_textView)
+
+        init {
+            itemView.setOnClickListener{
+                val  position=adapterPosition
+
+                if (position!=RecyclerView.NO_POSITION)
+                {
+                    val  task=getItem(position)
+                    listner.onTastClick(task)
+                }
+            }
+
+            checkbox.setOnClickListener{
+                val  position=adapterPosition
+
+                if (position!=RecyclerView.NO_POSITION)
+                {
+                    val  task=getItem(position)
+                    listner.onCheckBoxClick(task,checkbox.isChecked)
+                }
+            }
+        }
 
         fun bind(task: Task){
             title.text=task.title
             title.paint.isStrikeThruText=task.iscompleted
             checkbox.isChecked=task.iscompleted
         }
+
+
     }
 
     class TaskDiffUtil():DiffUtil.ItemCallback<Task>() {
@@ -49,5 +78,11 @@ class TaskAdapter:ListAdapter<Task,TaskAdapter.TaskViewHolder>(TaskDiffUtil()) {
         override fun areContentsTheSame(oldItem: Task, newItem: Task): Boolean {
             return oldItem==newItem
         }
+    }
+
+
+    interface IOnTaskClickListner{
+        fun onTastClick(task: Task)
+        fun onCheckBoxClick(task: Task,isClicked:Boolean)
     }
 }

@@ -14,9 +14,13 @@ class AddTaskActivity : AppCompatActivity() {
         val title=findViewById<TextView>(R.id.activity_add_task_title)
 
         btn.setOnClickListener {
-            intent.putExtra("title",title.text.toString())
-            setResult(RESULT_OK,intent)
+
+
+            intent.putExtra("title", title.text.toString())
+            setResult(RESULT_OK, intent)
             finish()
+
         }
+
     }
 }

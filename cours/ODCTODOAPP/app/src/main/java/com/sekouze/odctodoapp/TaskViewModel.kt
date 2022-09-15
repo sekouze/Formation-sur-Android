@@ -43,6 +43,28 @@ class TaskViewModel:ViewModel() {
 
       }
    }
+
+
+   fun onTaskCompleted(task: Task,iscompleted :Boolean){
+      viewModelScope.launch {
+         withContext(Dispatchers.IO){
+            dao.updateTask(task.copy(iscompleted = iscompleted))
+
+         }
+      }
+   }
+
+   fun deleteAll(){
+      viewModelScope.launch {
+         withContext(Dispatchers.IO){
+            dao.deleteAll()
+         }
+
+      }
+   }
+
+
+
 //
 //   fun getTasks(){
 //      viewModelScope.launch {

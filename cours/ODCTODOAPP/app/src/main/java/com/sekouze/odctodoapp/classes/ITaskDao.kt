@@ -18,4 +18,7 @@ interface ITaskDao {
 
     @Update
     suspend fun updateTask(task:Task)
+
+    @Query("delete from tasks")
+    fun deleteAll()
 }
